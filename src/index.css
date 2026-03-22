@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --color-primary: #00B4D8;
+  --color-secondary: #03045E;
+  --color-accent: #90E0EF;
+  --color-pink-accent: #FF70A6;
+  --color-orange-accent: #FF9770;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary bg-white antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.bento-item {
+  @apply relative overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:scale-[1.02];
+}
+
+.blob-bg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, var(--color-accent) 0%, transparent 100%);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
