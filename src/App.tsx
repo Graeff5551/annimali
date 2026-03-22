@@ -24,7 +24,7 @@ import { useState, useEffect } from "react";
 
 const Logo = () => (
   <a href="#home" className="flex items-center gap-2 transition-all hover:scale-105 active:scale-95">
-    <span className="text-3xl font-extrabold tracking-tight text-secondary font-display">
+    <span translate="no" className="text-3xl font-extrabold tracking-tight text-secondary font-display">
       Annimali
     </span>
   </a>
@@ -322,7 +322,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-2">Dra. Aline Morais</h2>
-            <p className="text-primary font-bold mb-8 tracking-wider">CRMV-RS 12345</p>
+            <p translate="no" className="text-primary font-bold mb-8 tracking-wider">CRMV-RS 12345</p>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
                 Com mais de 13 anos de dedicação à medicina veterinária em Tramandaí, a Dra. Aline Morais 
@@ -354,7 +354,7 @@ export default function App() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary p-6 rounded-2xl shadow-xl">
-              <p className="font-bold text-lg">CRMV-RS 12345</p>
+              <p translate="no" className="font-bold text-lg">CRMV-RS 12345</p>
               <p className="text-xs opacity-80 uppercase">Médica Veterinária Titular</p>
             </div>
           </div>
@@ -386,11 +386,11 @@ export default function App() {
               <ul className="space-y-4 text-gray-600 text-sm">
                 <li className="flex gap-3">
                   <MapPin className="text-primary shrink-0" size={20} />
-                  <span>Avenida Flores da Cunha, 3081<br />Tramandaí - RS, 95590-000</span>
+                  <span translate="no">Avenida Flores da Cunha, 3081<br />Tramandaí - RS, 95590-000</span>
                 </li>
                 <li className="flex gap-3">
                   <Phone className="text-primary shrink-0" size={20} />
-                  <span>{contactPhone}</span>
+                  <span translate="no">{contactPhone}</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="text-primary shrink-0" size={20} />
