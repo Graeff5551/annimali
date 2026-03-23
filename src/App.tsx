@@ -181,17 +181,6 @@ export default function App() {
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-orange-accent rounded-full opacity-20 blur-2xl"></div>
             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary rounded-full opacity-10 blur-3xl"></div>
-            
-            {/* Floating Badge */}
-            <div className="absolute bottom-10 -right-4 z-20 bg-white p-6 rounded-3xl shadow-2xl border border-gray-50 max-w-[200px]">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-primary/10 p-2 rounded-lg text-primary">
-                  <ShieldCheck size={20} />
-                </div>
-                <span className="font-bold text-sm">Segurança</span>
-              </div>
-              <p className="text-xs text-gray-500">Anestesia inalatória em todos os procedimentos.</p>
-            </div>
           </motion.div>
         </div>
       </section>
